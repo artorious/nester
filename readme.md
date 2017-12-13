@@ -1,1 +1,2 @@
-# nester - Display contents of a list. Including nested lists
+# nester - Display contents of a list. 
+A simple list viewer for nested items

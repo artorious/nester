@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-''''Display List Contents'''
+'''Displays List Contents
+module provides a function nester()which prints out python lists to stdout.
+'''
 
 # Sample list
 movies = ["The Holy Grail", 1975, "Terry Jones & Terry Gilliam", 91, 
@@ -8,7 +10,12 @@ movies = ["The Holy Grail", 1975, "Terry Jones & Terry Gilliam", 91,
                     "Terry Jones"]]]
 
 for each_item in movies:
-    print(each_item)
+    if isinstance(each_item, list):
+        for nested_item in each_item:
+            print(nested_item)
+    else:
+        print(each_item)
+    
 
 
 
