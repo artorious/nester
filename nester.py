@@ -1,21 +1,18 @@
 #!/usr/bin/env python3
-'''Displays List Contents
-module provides a function nester()which prints out python lists to stdout.
+'''module provides a function nester() 
+Prints out python any lists to stdout.
 '''
 
-# Sample list
-movies = ["The Holy Grail", 1975, "Terry Jones & Terry Gilliam", 91, 
-            ["Graham Chapman", 
-                ["Michael Palin", "John Cleese","Terry Gilliam", "Eric Idle", 
-                    "Terry Jones"]]]
+def nester(the_list):
+    '''Takes a positional argument, any python list
+    Returns each item in the provided list recursively on it's own line.
+    '''
+    for each_item in the_list:
+        if isinstance(each_item, list):
+            nester(each_item)
+        else:
+            print(each_item)
 
-for each_item in movies:
-    if isinstance(each_item, list):
-        for nested_item in each_item:
-            print(nested_item)
-    else:
-        print(each_item)
-    
 
 
 
