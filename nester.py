@@ -3,9 +3,11 @@
 Prints out python any lists to stdout.
 '''
 
-def nester(the_list, level):
-    '''Takes a positional arg, any python list.  
-    second arg level,  inserts tab-stops when a nested list is encountered.
+def nester(the_list, level=0):
+    '''Takes a positional arg the_list, any python list.  
+    Second optional arg level,  inserts tab-stops when a nested list is 
+    encountered.
+
     Returns each item in the provided list recursively on it's own line.
     '''
     for each_item in the_list:
