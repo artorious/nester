@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ nester
 module provides a function nester() 
-Prints out python any lists to stdout.
+Prints out any python  lists to stdout by default.
 """
 import sys
 def nester(the_list, indent=False, level=0, data_output=sys.stdout):
@@ -24,8 +24,8 @@ def nester(the_list, indent=False, level=0, data_output=sys.stdout):
             else:
                 if indent:
                     for tab_stop in range(level): # No. of tab-stops used
-                        print('\t', end='') # Display a TAB char for each level of inentation
-                print(each_item, file=data_output)
+                        print('\t', end='', file=data_output) # Display a TAB char for each level of inentation
+                print(each_item, file=data_output) # Display
     else:
         raise TypeError
 
