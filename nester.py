@@ -5,7 +5,7 @@ Prints out python any lists to stdout.
 """
 import sys
 def nester(the_list, indent=False, level=0, data_output=sys.stdout):
-    """" (list) -> stdout
+    """ (list) -> stdout
     Takes a positional arg <the_list>, any python list.
     A second optional arg <indent>', initally set to value False.
     That is......do not switch indentation by default. 
